@@ -7,4 +7,8 @@ class MainPage(BasePage):
     def go_to_login_page(self):
         login_link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
         login_link.click()
+
+    def go_to_profile(self):
+        profile_btn = self.browser.find_element(*MainPageLocators.PROFILE_BTN)
+        profile_btn.click()
         

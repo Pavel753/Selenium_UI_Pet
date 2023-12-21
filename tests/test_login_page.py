@@ -1,7 +1,11 @@
+import pytest
+
 from pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_go_to_login(browser):
     link = 'http://34.141.58.52:8080/#/login'
     page = LoginPage(browser, link)
