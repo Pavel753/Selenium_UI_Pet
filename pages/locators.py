@@ -4,6 +4,13 @@ from selenium.webdriver.common.by import By
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, '#app > header > div > ul > li:nth-child(1) > a > span')
     PROFILE_BTN = (By.CSS_SELECTOR, '.p-menuitem-text')
+    TYPE_SELECTOR = (By.ID, 'typesSelector')
+    DOG = (By.XPATH, '//div[3]/div/ul/li[1]')
+    CAT = (By.XPATH, '//div[3]/div/ul/li[2]')
+    REPTILE = (By.XPATH, '//div[3]/div/ul/li[3]')
+    HAMSTER = (By.XPATH, '//div[3]/div/ul/li[4]')
+    PARROT = (By.XPATH, '//div[3]/div/ul/li[5]')
+    PET_NAME = (By.ID, 'petName')
 
 
 class LoginPageLocators:
